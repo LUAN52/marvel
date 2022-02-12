@@ -1,17 +1,22 @@
 import { createGlobalStyle } from "styled-components";
+import background from './images/MarvelBT.png'
 
 
 export const GlobalStyle = createGlobalStyle`
 
-    html,body{
+    html,body,#root{
 
         min-height:100vh;
-
+        /* background-color:#D8D8D8; */
+            
     }
+
     #root{
-        min-height:100vh;
-       
+
+        background-image:url(${background}) ;
+        
     }
+   
 
 
 `

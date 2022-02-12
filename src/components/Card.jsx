@@ -1,27 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { CardContainer } from './CardStyled';
-import api from "../api/api"
 
-function Card() {
+function Card(props) {
 
-  const [setState,state] = useState([]);
+  
 
-  useEffect(()=>{
-    const getComic =async()=>{
-
-      const {data} = await api.getComics();
-      console.log(data);
-
-    }
-
-    getComic();
-  },[])
+  
 
   return (
     <CardContainer>
-      {/* <img alt="imagem quadrinho"></img> */}
+        <img src={props.url.path + "/portrait_xlarge.jpg"} alt="img quandrinho"/>
     </CardContainer>
   )
+
+  
 }
 
 export default Card
