@@ -10,7 +10,7 @@ const hash = md5(timeStamp+privateKey+publicKey)
 
 
 const getComics = ()=>{
-   return  axios.get(`http://gateway.marvel.com/v1/public/comics?ts=${timeStamp}&apikey=${publicKey}&hash=${hash}`)}
+   return  axios.get(`https://gateway.marvel.com/v1/public/comics?ts=${timeStamp}&apikey=${publicKey}&hash=${hash}`)}
 
 
 

@@ -4,13 +4,14 @@ import styled from "styled-components";
 export const ContainerList =styled.div`
 
     width:100%;
-    min-height:800px;
+    min-height:900px;
     border:2px solid orange;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    margin-top:10px;
+    box-sizing: border-box;
+    margin-top:150px;
     
 `
 
@@ -30,11 +31,11 @@ export const InnerContainer = styled.div`
 
     display:grid;
     grid-template-columns:repeat(1,1fr);
-    max-width:950px;
-    width:80%;
+    max-width:1050px;
+    width:90%;
     min-height:555px;
     border:2px solid black;
-    gap:5px;
+    gap:15px;
     margin-top:10px;
     padding-top:10px;
 

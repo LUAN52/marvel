@@ -6,7 +6,8 @@ export const ButtonContainer = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top:20px;
+   
+    margin-top:auto;
 
 `
 
@@ -16,5 +17,6 @@ export const ButtonS = styled.button`
     font-weight:800;
     background-color:red;
     width: 25%;
+    
 
 `

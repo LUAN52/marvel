@@ -3,6 +3,8 @@ import {ContainerList, InnerContainer} from './ContainerStyled';
 import Card from './Card';
 import api from "../api/api";
 import Button from './Button';
+import CartIcon from './CartIcon';
+
 
 function ComicList(){
 
@@ -34,20 +36,27 @@ function ComicList(){
     
     setSlice(spliceP);
     
-    
-
   },[state,position])
 
 
-  return <ContainerList>
+  
+
+
+  return( 
+    <>
+    
+        <CartIcon/>
+     {state.length===0?<h2>Carregando...</h2>:null}
     <InnerContainer>
-      {slice.map((item,index)=>(
+      
+      {
+      slice.map((item,index)=>(
         
-        <Card key={index} url={item.thumbnail}/>
+        <Card key={index} url={item.thumbnail} item={item}/>
       ))}
     </InnerContainer>
         <Button position={position} setPosition={setPositon}/>
-  </ContainerList>;
+  </>);
 }
 
 export default ComicList;

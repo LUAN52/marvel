@@ -1,40 +1,29 @@
-import React ,{createContext, useState,useContext} from 'react';
+import {createContext,useState,useContext} from "react";
 
 
- const Context = createContext()
+const Context = createContext();
 
 
-export default function Provider({children})
-{
-    
-    const [cart, setCart] = useState([]);
-    const [comic,setComic] = useState({})
-    
-    
+export default function Provider({children}){
 
-    return <Context.Provider 
-    value={{
-    
-        cart,setCart,
-        comic,setComic
-        
-        
+    const [cart,setCart] = useState([]);
+    const [ clickButton,setClickButton] = useState(false)
 
-    }
-    }> {children} </Context.Provider>
-          
-}
-
-export function useData()
-{
-    const context = useContext(Context)
-
-    const {cart,setCart,comic,setComic
-       } = context;
-           
-
-
-    return {cart,setCart,comic,setComic};
-        
+    return <Context.Provider value={{cart,setCart,clickButton,setClickButton}}>
+        {children}
+    </Context.Provider>
     
 }
+
+
+export function useData(){
+    const context = useContext(Context);
+
+    const {cart,setCart,
+    clickButton,setClickButton} = context;
+
+
+    return {cart,setCart,clickButton,setClickButton}
+}
+
+
