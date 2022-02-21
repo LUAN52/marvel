@@ -9,8 +9,6 @@ function CartIcon(){
   const {clickButton,setClickButton} = useData()
   return (
     <CartContainer>
-
-          
               <BsFillCartFill onClick={()=>{
                  
               }} style={{marginLeft:"10px"}} /> 

@@ -11,21 +11,15 @@ export const CartIconContainer = styled(Link)`
        align-items:center;
        justify-content:center;
        position:absolute;
-       border:2px solid orange;
-       text-decoration:none;
       
-
+       text-decoration:none;
        b{
          font-size:0.7rem;
          color:white;
          margin-bottom:2px;
          margin-left:6px;
        }
-
-      
-      
-
-       
+     
 `
 
 
@@ -35,12 +29,11 @@ export const CartContainer = styled.section`
     min-width: 100%;
     display:flex;  
     box-sizing: border-box;
-    border:2px solid black;
+    border-bottom:1px solid black;
     font-size:1.8rem;
     height: 50px;
     color:black;
     align-items:center;
-   
     margin-bottom:100px;
     
   }

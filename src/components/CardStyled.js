@@ -5,10 +5,10 @@ export const CardContainer = styled.div`
 
     width: 180px;
     height: 260px;
-    border:2px solid black;
+    border:1px solid black;
     box-sizing: border-box;
     justify-self: center;
-    border-radius:3px;
+    border-radius:2px;
     
    
     

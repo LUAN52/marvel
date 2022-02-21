@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { CartContainer, InnerContainer, DeleteItem, ImageContainer, PriceContainer, TotalContainer } from './CartPageStyled';
 import { useData } from '../context/context';
 import { EmptyCart } from './EmptyCart';
+import PurchaseButton from './PurchaseButton';
 
 export const CartPage = () => {
 
@@ -27,8 +28,7 @@ export const CartPage = () => {
 
     
     return (
-        <CartContainer> 
-            <h1>Carrinho</h1>
+       <> <CartContainer> 
             {cart.length > 0 ? cart.map((item, index) =>
                 <InnerContainer key={index}>
                     <ImageContainer><img src={item.thumbnail.path + "/portrait_xlarge.jpg"} alt="imagem compra" /></ImageContainer>
@@ -41,8 +41,14 @@ export const CartPage = () => {
                     </DeleteItem>
                 </InnerContainer>         
             ) :<EmptyCart/>
-            }<TotalContainer><b>total:{total}</b></TotalContainer>
+            }
         </CartContainer>
+        <TotalContainer>
+        <b>total:  {`R$${Math.round(total)}`}</b>
+        {cart.length>0?  <PurchaseButton/>:null}
+       
+         
+         </TotalContainer></>
 
     )
 

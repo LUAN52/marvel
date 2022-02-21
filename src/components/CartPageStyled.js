@@ -1,14 +1,9 @@
 import styled from "styled-components";
 
-
-
-
-
-
 export const InnerContainer = styled.div`
     width: 90%;
     height:80px;
-    border:2px solid black;
+    border:2px solid none;
     box-sizing:border-box;
     margin-top:5px;
     margin-bottom:1px;
@@ -32,6 +27,7 @@ export const DeleteItem = styled.button`
     color:white;
     right:0;
     top:0;
+    cursor:pointer;
 
     b{
         margin-bottom:3px
@@ -67,40 +63,53 @@ export const PriceContainer=styled.div`
 
     
 export const CartContainer = styled.section`
-    width: 80%;
-    min-height: 800px;
+    width:80%;
+    min-height: 240px;
     display:flex;
     flex-direction:column;
     align-items:center;
-    border:2px solid black;
-    justify-content:center;
+    
+    border:2px solid none;
     margin-top:50px;
-
+    margin-bottom:20px;
 
     h1{
          color:white;
          background-color:red;
-         font-weight:500;
+         font-weight:400;
          border-radius:2px;
          text-align:center;
          min-width:15%
+         font-size:0.5rem;
        }
-
- 
-
 
 `
 
 export const TotalContainer = styled.footer`
-
-    min-width:35%;
+    width:90%;
     background-color:red;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display:grid;
+    grid-columns:1fr 1fr;
+    grid-rows:0.5fr 1fr; 
     margin-top:auto;
-    height: 150px;
+    height: 100px;
     border:2px solid pink;
-    align-self:end;
+    align-self:center;
+
+    b{
+        grid-rows:1/2;
+        grid-column:1/4; 
+        text-align:center;
+        align-self:center;       
+    }
+   
+
+    @media only screen and (min-width:520px){
+       width:40%;
+       align-self:end;
+    }
 
 `
+
+    
+

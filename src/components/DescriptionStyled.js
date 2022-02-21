@@ -49,7 +49,6 @@ export const DescContainer = styled.div`
 export const PurchaseButton = styled.button`
 
     width: 80%;
-    border:2px solid black;
     border-radius:5px;
     background-color:#318ce7;
     color:white;

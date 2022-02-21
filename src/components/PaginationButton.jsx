@@ -1,7 +1,7 @@
 import React from 'react'
-import { ButtonContainer, ButtonS } from './ButtonStyled'
+import { ButtonContainer, ButtonS } from './PaginationButtonStyled'
 
-export default function Button(props) {
+export default function PaginationButton(props) {
   return (
     <ButtonContainer>
         {console.log(props)}
