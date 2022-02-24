@@ -19,10 +19,7 @@ export const EmptyContainer = styled.div`
             font-size:1.5rem;
         }
             
-       }
-
-
-      
+       }     
 
     div{
        
