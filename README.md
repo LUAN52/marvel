@@ -1,18 +1,18 @@
 # Projeto Ecommerce da marvel
 
 ## Descrição do Projeto
-<p align="center">projeto que simula a compra de quadrinho da editora marvel</p>
+<p >projeto que simula a compra de quadrinho da editora marvel</p>
 
 
 
-<p align="center">
+<p >
  <a href="#objetivo">Objetivo</a> •
  <a href="#tecnologias">Tecnologias</a> •  
  <a href="#autor">Autor</a>
 </p>
 
 ###  Objetivo
-<p align="center">estudo de react</p>
+<p >estudo de react</p>
 
 
 ### 🛠 Tecnologias
@@ -29,4 +29,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 ###  Autor
-<p align="center">Luan</p>
+<p >Luan</p>
