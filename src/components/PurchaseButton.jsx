@@ -7,7 +7,7 @@ const navi= useNavigate();
    
   return (
     <PurchaseContainer>
-        <PurButton onClick={()=>{
+        <PurButton type='button' onClick={()=>{
            navi("/purchase")
         }} color="green">Comprar</PurButton>
         <PurButton onClick={()=>{

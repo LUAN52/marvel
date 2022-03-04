@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
 
-    width: 180px;
-    height: 260px;
+    width: 210px;
+    height: 280px;
     border:1px solid black;
     box-sizing: border-box;
     justify-self: center;
@@ -14,7 +14,7 @@ export const CardContainer = styled.div`
     
     img{
         width:100%;
-        height:63%;
+        height:60%;
         
     }
 

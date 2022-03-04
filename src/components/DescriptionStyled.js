@@ -2,10 +2,11 @@ import styled from "styled-components";
 export const DescContainer = styled.div`
 
     max-width: 100%;
-    height:34%;
+    height:37.5%;
     background-color:red;
     display: flex;
     align-items:center;
+    justify-content:center;
     border-bottom:2px;
     padding:2px;
     overflow:scroll;
@@ -17,9 +18,10 @@ export const DescContainer = styled.div`
 
     p{
         margin:0;
-        font-size:0.7rem;
+        font-size:0.8rem;
         word-wrap:break-word;
         margin-bottom:2px;
+        margin-left:10px;
     }
 
     div{
@@ -27,7 +29,9 @@ export const DescContainer = styled.div`
         flex-direction:column;
         color:white;
         font-weight:500;
-        margin-top:15px;
+        margin-top:20px;
+        
+
         
         width:100%;
 

@@ -10,6 +10,7 @@ export const PurchaseContainer = styled.div`
     align-self:end;
     grid-column:1/4;
     grid-rows:3/4;
+    
 
 `
 
