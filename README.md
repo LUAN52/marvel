@@ -28,5 +28,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 
-###  Objetivo
+###  Autor
 <p align="center">Luan</p>
