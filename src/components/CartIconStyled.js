@@ -21,9 +21,6 @@ export const CartIconContainer = styled(Link)`
        }
      
 `
-
-
-
 export const CartContainer = styled.section`
 
     min-width: 100%;

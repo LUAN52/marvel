@@ -6,9 +6,6 @@ import PurchaseButton from './PurchaseButton';
 
 export const CartPage = () => {
 
-
-    
-
     const [deleteB,setDeleteB] = useState(false)
     const {cart,setCart} = useData();
     const [total,setTotal] = useState(0);

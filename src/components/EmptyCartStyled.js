@@ -13,18 +13,10 @@ export const EmptyContainer = styled.div`
     border:2px solid black;
 
     h2{
-        font-size:0.8rem;
-        @media only screen and (min-width:520px)
-        {
-            font-size:1.5rem;
-        }
-            
-       }     
-
+        font-size:max(0.8rem,2vw);
+    }
+       
     div{
-       
-       
-        
         display: flex;
         justify-content:center;
         width:60%;
@@ -32,17 +24,13 @@ export const EmptyContainer = styled.div`
 
 `
 
-
-
-export const ReturButton = styled(Link)`
-
-    width:60%;
+export const ReturButton = styled(Link) `
+    width:100px;
     background-color:red;
     color:white;
     border:2px solid none;
     border-radius:5px;
     text-decoration:none;
-    text-align:center;
-    
+    text-align:center;   
 
 `
